@@ -9,490 +9,1209 @@
     <title>Mojo's Website</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<style type="text/css">
-.top{
-    background-image: url('https://image.freepik.com/free-vector/round-blue-light-twisted-white-background_48799-1211.jpg');
-    background-repeat: no-repeat;
-    background-position: 250px -650px;
-    background-size: 1700px;
-}
-.div{
-    display:block;
-}
-.gradient-button {
-        margin: 10px;
-        font-family: "Arial Black", Gadget, sans-serif;
-        font-size: 14px;
-        padding: 10px;
-        text-align: center;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: #FFF;
-        box-shadow: 0 0 20px #eee;
-        border-radius: 10px;
-        width: 150px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        cursor: pointer;
-        display: inline-block;
-        border-radius: 25px;
-}
-.gradient-button:hover{
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        margin: 8px 10px 12px;
-}
+    <style type="text/css">
+        .top {
+            background-image: url('https://image.freepik.com/free-vector/round-blue-light-twisted-white-background_48799-1211.jpg');
+            background-repeat: no-repeat;
+            background-position: 250px -650px;
+            background-size: 1700px;
+            margin-top: 60px;
+        }
 
-.gradient-button
-{background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)}
-.gradient-button-4:hover { background-position: right center; }
+        .div {
+            display: block;
+        }
 
-.video {
-    margin: 0 auto; width: 600px;
-}
+        .gradient-button {
+            margin: 10px;
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 14px;
+            padding: 10px;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #FFF;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            width: 150px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 25px;
+        }
 
-.icons{
-    margin: 3rem auto;
-    padding: 3rem;
-    background-color: #f1f3ff;
-}
+        .gradient-button:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            margin: 8px 10px 12px;
+        }
 
-.aligned {
-                        display: flex;
-                        align-items: center;
-    margin: 5rem;
-                }
+        .gradient-button {
+            background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)
+        }
 
-                span {
-                        padding: 10px;
-                    margin: 5rem;
-                    font-size: 18px;
-                }
+        .gradient-button-4:hover {
+            background-position: right center;
+        }
 
-.videos {
-    margin: 0 auto; width: 450px;
-}
+        .video {
+            margin: 0 auto;
+            width: 600px;
+        }
 
-.grad-button {
-        margin: 15px;
-        font-family: "Arial Black", Gadget, sans-serif;
-        font-size: 20px;
-        padding: 10px;
-        text-align: center;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: #FFF;
-        box-shadow: 0 0 20px #eee;
-        border-radius: 5px;
-        width: 200px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        cursor: pointer;
-        display: inline-block;
-        border-radius: 25px;
-}
-.grad-button:hover{
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        margin: 8px 10px 12px;
-}
+        .icons {
+            margin: 3rem auto;
+            padding: 3rem;
+            background-color: #f1f3ff;
+        }
 
-.grad-button-4 {background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)}
-.grad-button-4:hover { background-position: right center; }
+        .aligned {
+            display: flex;
+            align-items: center;
+            margin: 5rem;
+        }
 
+        span {
+            padding: 10px;
+            margin: 5rem;
+            font-size: 18px;
+        }
 
+        .videos {
+            margin: 0 auto;
+            width: 450px;
+        }
 
-footer {
-        position: relative;
-        background: #39445d;
-        color: white;
-        padding-top: 30px;
-        padding-bottom: 30px;
-}
+        .grad-button {
+            margin: 15px;
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #FFF;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 5px;
+            width: 200px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 25px;
+        }
 
-.container, .max-container {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-}
+        .grad-button:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            margin: 8px 10px 12px;
+        }
 
-.new-form{
-    color:white;
-    background-image: url('data:image/png;base64,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');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        .grad-button-4 {
+            background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)
+        }
 
-.last-form{
-    background-image: url('https://i.pinimg.com/736x/48/8f/ee/488fee10b2945c485f2d860d8de4a3a3.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0px -300px;
-}
+        .grad-button-4:hover {
+            background-position: right center;
+        }
 
 
-</style>
+
+        footer {
+            position: relative;
+            background: #39445d;
+            color: white;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .container,
+        .max-container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .new-form {
+            color: white;
+            background-image: url('data:image/png;base64,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');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .last-form {
+            background-image: url('https://i.pinimg.com/736x/48/8f/ee/488fee10b2945c485f2d860d8de4a3a3.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 0px -300px;
+        }
+
+        .body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .info {
+            border-color: #2196F3;
+            color: dodgerblue;
+            border-radius: 10px;
+        }
+
+        .g-button {
+            margin: 3px;
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 14px;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #FFF;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            height: 70px;
+            width: 150px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            cursor: pointer;
+            display: block;
+            border-radius: 25px;
+        }
+
+        .g-button:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            margin: 8px 10px 12px;
+        }
+
+        .g-button-1 {
+            background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)
+        }
+
+        .g-button-1:hover {
+            background-position: right center;
+        }
+
+        nav {
+            position: fixed;
+            z-index: 99;
+            width: 100%;
+
+            background: white;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            max-width: 1300px;
+            padding: 0px 30px;
+            height: 70px;
+            line-height: 70px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .navbar .nav-links {
+            display: inline-flex;
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links li a {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 9px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            background: #3A3B3C;
+        }
+
+        .nav-links .mobile-item {
+            display: none;
+        }
+
+        .nav-links .drop-menu {
+            position: absolute;
+            background: #166da7;
+            width: 130px;
+            line-height: 45px;
+            top: 85px;
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-links li:hover .drop-menu,
+        .nav-links li:hover .mega-box {
+            transition: all 0.3s ease;
+            top: 70px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .drop-menu li a {
+            color: white;
+            width: 100%;
+            display: block;
+            padding: 0 0 0 15px;
+            font-weight: 400;
+            border-radius: 0px;
+        }
+
+        .mega-box {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            padding: 0 30px;
+            top: 85px;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .mega-box .content {
+            background: #1780c5;
+            padding: 25px 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .mega-box .content .row {
+            width: calc(25% - 30px);
+            line-height: 45px;
+        }
+
+        .content .row header {
+            color: #f2f2f2;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .content .row .mega-links {
+            margin-left: -40px;
+            border-left: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        .row .mega-links li {
+            padding: 0 20px;
+        }
+
+        .row .mega-links li a {
+            padding: 0px;
+            padding: 0 20px;
+            color: #d9d9d9;
+            font-size: 17px;
+            display: block;
+        }
+
+        .row .mega-links li a:hover {
+            color: #f2f2f2;
+        }
+
+        .navbar .btn {
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .navbar .btn.close-btn {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+        }
+
+        @media screen and (max-width: 970px) {
+            .navbar .btn {
+                display: block;
+            }
+
+            .navbar .nav-links {
+                position: fixed;
+                height: 100vh;
+                width: 100%;
+                max-width: 350px;
+                top: 0;
+                left: -100%;
+                background: #242526;
+                display: block;
+                padding: 50px 10px;
+                line-height: 50px;
+                overflow-y: auto;
+                box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+                transition: all 0.3s ease;
+            }
+
+            /* custom scroll bar */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #242526;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #3A3B3C;
+            }
+
+            #menu-btn:checked~.nav-links {
+                left: 0%;
+            }
+
+            #menu-btn:checked~.btn.menu-btn {
+                display: none;
+            }
+
+            #close-btn:checked~.btn.menu-btn {
+                display: block;
+            }
+
+            .nav-links li {
+                margin: 15px 10px;
+            }
+
+            .nav-links li a {
+                padding: 0 20px;
+                display: block;
+                font-size: 20px;
+            }
+
+            .nav-links .drop-menu {
+                position: static;
+                opacity: 1;
+                top: 65px;
+                visibility: visible;
+                padding-left: 20px;
+                width: 100%;
+                max-height: 0px;
+                overflow: hidden;
+                box-shadow: none;
+                transition: all 0.3s ease;
+            }
+
+            #showDrop:checked~.drop-menu,
+            #showMega:checked~.mega-box {
+                max-height: 100%;
+            }
+
+            .nav-links .desktop-item {
+                display: none;
+            }
+
+            .nav-links .mobile-item {
+                display: block;
+                color: #f2f2f2;
+                font-size: 20px;
+                font-weight: 500;
+                padding-left: 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+            .nav-links .mobile-item:hover {
+                background: #3A3B3C;
+            }
+
+            .drop-menu li {
+                margin: 0;
+            }
+
+            .drop-menu li a {
+                border-radius: 5px;
+                font-size: 18px;
+            }
+
+            .mega-box {
+                position: static;
+                top: 65px;
+                opacity: 1;
+                visibility: visible;
+                padding: 0 20px;
+                max-height: 0px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+
+            .mega-box .content {
+                box-shadow: none;
+                flex-direction: column;
+                padding: 20px 20px 0 20px;
+            }
+
+            .mega-box .content .row {
+                width: 100%;
+                margin-bottom: 15px;
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .mega-box .content .row:nth-child(1),
+            .mega-box .content .row:nth-child(2) {
+                border-top: 0px;
+            }
+
+            .content .row .mega-links {
+                border-left: 0px;
+                padding-left: 15px;
+            }
+
+            .row .mega-links li {
+                margin: 0;
+            }
+
+            .content .row header {
+                font-size: 19px;
+            }
+        }
+
+        nav input {
+            display: none;
+        }
+
+        .body-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            padding: 0 30px;
+        }
+
+        .body-text div {
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        .navbar-brand {
+            width: 200px;
+        }
+
+        .gr-button {
+            margin: 10px;
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #FFF;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 25px;
+        }
+
+        .gr-button:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            margin: 8px 10px 12px;
+        }
+
+        .gr-button-3 {
+            background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%)
+        }
+
+        .gr-button-3:hover {
+            background-position: right center;
+        }
+    </style>
 </head>
 
 <body>
 
-
-        <form class="top">
-            <div class="media">
-                <a class="pull-right" href="#">
-                    <img class="media-object" src="https://images.unsplash.com/photo-1516572541403-d8d1ef5b8844?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=85" style="width:450px; margin:3rem; padding:2rem;" alt="...">
-                </a>
-                <div class="media-body" style="padding-left:5rem; margin:3rem;">
-                    <p class="media-heading" style="margin:2rem; font-size:45px;"><b>Board e-Learning Platform</b></p>
-                    <h3 class="text-primary" style="margin:2rem;">Expand your skills, acquire confidence, and consolidate your knowledge of Board</h3>
-
-                    <a class="gradient-button">Get Started</a>
-                </div>
-            </div>
-
-            <p style="text-align:center; margin:3rem; font-size:16px;">Continuous improvement is a key factor in leveraging and developing the workforce in any organization, but especially in the technology industry which is marked by a rapid rate of change and innovation. Whether you're an inexperienced user or a seasoned pro, the Board e-Learning platform effectively addresses all of your training needs, no matter where you or your organization is located.</p>
-            <p style="text-align:center; margin:2rem; font-size:25px; padding-left:5%; padding-right: 5%;"><b>Start your e-Learning journey through our extensive product tutorials and business cases</b></p>
-
-            <div class="video" style="position:relative; padding-bottom:20%; padding-top:20%; height:0; overflow:hidden;">
-                <iframe width="600" height="249" src="https://www.youtube.com/embed/upvvE6hjHDQ" frameborder="0" allowfullscreen style="position:absolute; top:13%; left:0; width:600px; height:344px; border-radius: 20px;">
-                </iframe>
-            </div>
-        </form>
-
-        <form class="icons">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="media" style="text-align:center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-clock-history" viewBox="0 0 16 16">
-                                <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
-                                <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
-                                <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
-                            </svg>
-                            <div class="media-body">
-                                <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>10 Tracks</b></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="media" style="text-align:center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-laptop" viewBox="0 0 16 16">
-                                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
-                            </svg>
-                            <div class="media-body">
-                                <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>170+ Product Videos</b></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="media" style="text-align:center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-inboxes-fill" viewBox="0 0 16 16">
-                                <path d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1H4.98zM3.81.563A1.5 1.5 0 0 1 4.98 0h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374L3.81.563zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393z" />
-                            </svg>
-                            <div class="media-body">
-                                <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>20+ Business Cases</b></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="media" style="text-align:center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-hourglass-split" viewBox="0 0 16 16">
-                                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
-                            </svg>
-                            <div class="media-body">
-                                <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Equivalent to 5 weeks of on-site training</b></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-
-        <h1 style="text-align:center; margin:3rem;"><b>Key Advantages</b></h1>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="media" style="text-align:center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-book" viewBox="0 0 16 16">
-                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-                        </svg>
-                        <div class="media-body" style="text-align:center;">
-                            <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Comprehensive platform</b></h4>
-                            <p style="font-size:18px" class="text-muted">Access all the Board e-Learning content through one centrally managed repository. All material is reliable and validated according to our quality standards.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="media" style="text-align:center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-shop" viewBox="0 0 16 16">
-                            <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
-                        </svg>
-                        <div class="media-body" style="text-align:center;">
-                            <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Self-directed learning experience</b></h4>
-                            <p style="font-size:18px" class="text-muted">Design your own learning curve and track your progress by effectively matching your goals with the contents of the catalogue. Board e-Learning dramatically boosts the training experience for any type of Board user, such as Business Users, End Users, Developers or Administrators, reducing the time-to-productivity lapse with obvious profitable returns.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="media" style="text-align:center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-globe2" viewBox="0 0 16 16">
-                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
-                        </svg>
-                        <div class="media-body" style="text-align:center;">
-                            <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Anytime, Anywhere</b></h4>
-                            <p style="font-size:18px" class="text-muted">Get unlimited and permanent access to e-Learning materials. Learn in your own time, at your own pace, and in any location that is convenient, without the expense of training venues or travel costs.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <nav class="navbar">
+        <div class="navbar-brand" style="height: 100px;"><a href="#"><img style="max-width: 300px;"
+                    src="https://higherlogicdownload.s3.amazonaws.com/BOARDINTERNATIONAL/ba361653-64f6-46b9-8130-45721f9e3da3/UploadedImages/Board_logo_CMYK.jpg">
+            </a>
         </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="media" style="text-align:center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-house" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-                        </svg>
-                        <div class="media-body" style="text-align:center;">
-                            <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>What-Why-How</b></h4>
-                            <p style="font-size:18px" class="text-muted">Take advantage of the “3 Pillars” learning approach throughout the video courses. Discover WHAT you are going to learn; understand WHY that topic is critical and the benefits it can bring to an organization or a department; and find out HOW to implement the relevant solution within Board.</p>
+        <ul class="nav-links">
+            <li style="margin-top: 15px;">
+                <a href="#"><b>Why Board</b></a>
+            </li>
+            <li style="margin-top: 15px;">
+                <a href="#"><b>Platform</b></a>
+                <div class="mega-box">
+                    <div class="content">
+                        <div class="row">
+                            <h4 style="color: white;"><b>Board’s unified platform for analysis, simulation, and planning
+                                    makes business
+                                    decision-making more efficient and effective.</b></h4>
+                            <ul class="mega-links">
+                                <a class="gr-button gr-button-3">Platform Overview</a>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>Technology</b></h4>
+                            </a>
+                            <ul class="mega-links">
+                                <li><a href="#">Cloud</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Security & compliance</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>Capabilities</b></h4>
+                            </a>
+                            <ul class="mega-links">
+                                <li><a href="#">Self-service Analytics</a></li>
+                                <li><a href="#">Planning</a></li>
+                                <li><a href="#">Simulation</a></li>
+                                <li><a href="#">Reporting</a></li>
+                                <li><a href="#">Dashboarding</a></li>
+                                <li><a href="#">Analytics</a></li>
+                                <li><a href="#">Scorecarding</a></li>
+                                <li><a href="#">Mobile</a></li>
+                                <li><a href="#">MS Office integration</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>Board 11</b></h4>
+                            </a>
+                            <a href="#">
+                                <h4 style="color:white;"><b>Board Toolkit</b></h4>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="media" style="text-align:center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
-                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
-                        </svg>
-                        <div class="media-body" style="text-align:center;">
-                            <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Firsthand knowledge</b></h4>
-                            <p style="font-size:18px" class="text-muted">See Board in action in the real world. The Board course library takes you through fundamental basic concepts right into concrete business cases and provides in-depth insight into some common business challenges.</p>
+            </li>
+            <li style="margin-top: 15px;">
+                <a href="#"><b>Solutions</b></a>
+                <div class="mega-box">
+                    <div class="content">
+                        <div class="row">
+                            <h4 style="color: white;"><b>Meet any business decision-making need across your organization
+                                    with an
+                                    all-in-one
+                                    approach</b></h4>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="media" style="text-align:center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-share-fill" viewBox="0 0 16 16">
-                            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
-                        </svg>
-                        <div class="media-body" style="text-align:center; ">
-                            <h4 class="media-heading" style="margin:2rem; font-size:18px;"><b>End-to-end learning journey</b></h4>
-                            <p style="font-size:18px" class="text-muted">Gain knowledge across all the fundamental topics of Board. From System Setup to Database Design, Board Application Build and Delivery to Maintenance and Troubleshooting, understand the entire Board Solution Lifecycle.</p>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>By Department</b></h4>
+                            </a>
+                            <ul class="mega-links">
+                                <li><a href="#">Finance</a></li>
+                                <li><a href="#">Supply Chain</a></li>
+                                <li><a href="#">HR</a></li>
+                                <li><a href="#">Sales</a></li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <form class="new-form">
-            <div class="aligned">
-                <a class="pull-left" href="#">
-                    <img class="media-object" src="https://www.board.com/sites/default/files/boardino.png" style="width:450px;" alt="...">
-                </a>
-                <span>
-                    <h1 class="media-heading-md">Meet your virtual trainer</h1>
-                    <p>Boardino, your helpful training assistant, will be with you on every step of your e-Learning journey. Designed by illustrator Carlo Stanga, Boardino guides you through each training module, providing clear, concise instructions to help speed up the learning process.</p>
-                </span>
-            </div>
-
-            <div class="container">
-                <p style="text-align:center; font-size:25px; margin:5rem;"><b>Explore the e-Learning Platform. Enjoy a 2 minute preview!</b></p>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="videos" style="position:relative; padding-bottom:45%; padding-top:40px; height:0; overflow:hidden;">
-                            <iframe width="450" height="230" src="https://www.youtube.com/embed/y8aN_-vLWqA" frameborder="0" allowfullscreen style="position:absolute; top:0; left:0; width:450px; height:230px; border-radius: 20px;">
-                            </iframe>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>By Industry</b></h4>
+                            </a>
+                            <ul class="mega-links">
+                                <li><a href="#">Retail</a></li>
+                                <li><a href="#">Manufacturing</a></li>
+                                <li><a href="#">Financial Services</a></li>
+                                <li><a href="#">Proffesional Services</a></li>
+                                <li><a href="#">Automotive</a></li>
+                                <li><a href="#"><b>More...</b></a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="videos" style="position:relative; padding-bottom:45%; padding-top:40px; height:0; overflow:hidden;">
-                            <iframe width="450" height="230" src="https://www.youtube.com/embed/t81pN5z0ECw" frameborder="0" allowfullscreen style="position:absolute; top:0; left:0; width:450px; height:230px; border-radius: 20px;">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-
-        <div class="container-fluid" style="margin:8rem;">
-            <div class="row">
-                <div class="col-12 col-md-5" style="text-align:right;">
-                    <p style="font-size:56px;"><b>Learn more about the content</b></p>
-                    <a href="#" class="btn btn-danger" role="button" style="border-radius: 12px;">Visit the user community</a>
-                </div>
-                <div class="col-12 col-md-2" style="text-align:right;">
-                </div>
-                <div class="col-12 col-md-5" style="text-align:left;">
-                    <p style="font-size:56px;"><b>Begin your e‑Learning journey</b></p>
-                    <a href="#" class="btn btn-danger" role="button" style="border-radius: 12px;">Request access</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="last-form" style="padding-left:40%; padding-top:5%">
-            <p style="font-size:50px;"><b>Want to see Board in action?</b></p>
-            <a class="grad-button grad-button-4">Request a demo</a>
-        </div>
-
-        <footer>
-            <div class="container region region-footer-bottom">
-                <div id="block-block-16" class="block block-block footer-navigation">
-                    <nav class="row">
-                        <ul class="col-lg-2 col-md-2 col-sm-12 list-unstyled">
-                            <li class="menu-title">
-                                <h3><b>
-                                        <a href="#" style="color:white;">Capabilities</a>
-                                    </b></h3>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">FP&A</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Reporting Software</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Self-service BI tools</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Mobile</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Strategic planning</a>
-                            </li>
-                        </ul>
-                        <ul class="col-lg-2 col-md-2 col-sm-12 list-unstyled">
-                            <li class="menu-title">
-                                <h3><b>
-                                        <a href="#" style="color:white;">Platform</a>
-                                    </b></h3>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Product overview</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Technology</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Cloud (SAAS)</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">BI Toolkit</a>
-                            </li>
-                        </ul>
-                        <ul class="col-lg-3 col-md-3 col-sm-12 list-unstyled">
-                            <li class="menu-title">
-                                <h3><b>
-                                        <a href="#" style="color:white;">By department</a>
-                                    </b></h3>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Finance</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Sales</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Supply chain</a>
-                            </li>
-                        </ul>
-                        <ul class="col-lg-3 col-md-3 col-sm-12 list-unstyled">
-                            <li class="menu-title">
-                                <h3><b>
-                                        <a href="#" style="color:white;">By industry</a>
-                                    </b></h3>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Retail</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Manufacturing</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Automotive</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Financial services</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Insurance</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">More...</a>
-                            </li>
-                        </ul>
-                        <ul class="col-lg-2 col-md-2 col-sm-12 list-unstyled">
-                            <li class="menu-title">
-                                <h3><b>
-                                        <a href="#" style="color:white;">Resources</a>
-                                    </b></h3>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">News</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Community</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Case studies</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Analyst reports</a>
-                            </li>
-                            <li>
-                                <a href="#" style="color:white;">Whitepapers</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <hr>
-                <div id="block-block-21" class="block block-block social-links text-center">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#" style="color:white;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                                </svg> LinkedIn</a></li>
-                        <li class="list-inline-item"><a href="#" style="color:white;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                </svg> Twitter</a></li>
-                        <li class="list-inline-item"><a href="#" style="color:white;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                </svg> Facebook</a></li>
-                        <li class="list-inline-item"><a href="#" style="color:white;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                </svg> YouTube</a></li>
-                    </ul>
-                </div>
-                </hr>
-
-                <hr>
-                <div id="block-block-6" class="block block-block">
-                    <p>Board is an all-in-one Decision-Making Platform which combines Business Intelligence tools with Corporate Performance Management, Simulation, and Predictive Analytics capabilities. Its coding-free, drag-and-drop interface enables users to build self-service analytics and planning applications with ease to meet the ongoing decision-making requirements of their organization. Board allows the creation of dashboards, reports, and analyses which are fully integrated with enterprise planning and simulation processes, bringing together financial and operational data for complete visibility of the relationship between output, performance, and financial results. The platform is featured in three Gartner Magic Quadrants, is highly praised in numerous other analyst reports, and repeatedly comes out as the top solution in customer reviews of BI and CPM solutions.</p>
-                </div>
-                </hr>
-
-                <hr>
-                <div id="block-block-11" class="block block-block">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-md-6">Copyright © 2021 - All rights reserved. Board International - Business Intelligence Software Solution</div>
-                        <div class="col-12 col-md-6 text-right">
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><a href="#" style="color:white;">Privacy policy</a></li>
-                                <li class="list-inline-item"><a href="#" style="color:white;">Cookie policy</a></li>
-                                <li class="list-inline-item"><a href="#" style="color:white;" target="_blank">Code of ethics</a></li>
-                                <li class="list-inline-item"><a href="#" style="color:white;">Terms of service</a></li>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>By Application</b></h4>
+                            </a>
+                            <ul class="mega-links">
+                                <li><a href="#">Financial Consolidation</a></li>
+                                <li><a href="#">Lease Accounting</a></li>
+                                <li><a href="#">
+                                        <h4><b>Integrated Business Planning</b></h4>
+                                    </a></li>
+                                <li><a href="#">
+                                        <h4><b>Marketplace</b></h4>
+                                    </a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                </hr>
+            </li>
+            <li style="margin-top: 15px;">
+                <a href="#"><b>Costumers</b></a>
+            </li>
+            <li style="margin-top: 15px;">
+                <a href="#"><b>Resources</b></a>
+                <div class="mega-box">
+                    <div class="content">
+                        <div class="row">
+                            <h4 style="color: white;"><b>Our free whitepapers, analyst research reports, and other
+                                    resources provide key
+                                    insights and best practices in BI & CPM</b></h4>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>Events & Webinar</b></h4>
+                            </a>
+                            <ul class="mega-links">
+                                <li><a href="#">Upcoming events</a></li>
+                                <li><a href="#">Live webinars</a></li>
+                                <li><a href="#">On-demand webinars</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>Collateral</b></h4>
+                            </a>
+                            <ul class="mega-links">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Case studies</a></li>
+                                <li><a href="#">Analyst reports</a></li>
+                                <li><a href="#">Documents</a></li>
+                                <li><a href="#">Costumer connect</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>Blog</b></h4>
+                            </a>
+                            <ul class="mega-links">
+                                <li><a href="#">
+                                        <h4><b>Community</b></h4>
+                                    </a></li>
+                                <li><a href="#">
+                                        <h4><b>Training & Support</b></h4>
+                                    </a></li>
+                                <li><a href="#">
+                                        <h4><b>Marketplace</b></h4>
+                                    </a></li>
+                                <li><a href="#">
+                                        <h4><b>Partner Hub</b></h4>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li style="margin-top: 15px;">
+                <a href="#"><b>About Us</b></a>
+                <div class="mega-box">
+                    <div class="content">
+                        <div class="row">
+                            <ul class="mega-links">
+                                <h4 style="color: white;"><b>Board International is a leading software vendor in the
+                                        fields of BI, Corporate
+                                        Performance Management, and Advanced Analytics</b></h4>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <h4 style="color:white;"><b>About Board</b></h4>
+                            </a>
+                            <ul class="mega-links">
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h4><b>.</b></h4>
+                            <ul class="mega-links">
+                                <li><a href="#">Recognition</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li style="margin-top: 15px;">
+                <a href="#"><b>EN</b></a>
+                <ul class="drop-menu">
+                    <li><a href="#">
+                            <b>FR</b>
+                        </a></li>
+                    <li><a href="#">
+                            <b>DE</b>
+                        </a></li>
+                    <li><a href="#">
+                            <b>IT</b>
+                        </a></li>
+                    <li><a href="#">
+                            <b>ES</b>
+                        </a></li>
+                    <li><a href="#">
+                            <b>JP</b>
+                        </a></li>
+                    <li><a href="#">
+                            <b>CN</b>
+                        </a></li>
+                </ul>
+            </li>
+            <li style="margin-top: 15px;"><a class="nav-link search-toggle" data-toggle="collapse" data-target="#search" href="#"
+                    title="Search in board.com"><span class="ic ic-fw ic-1-5x ic-search-2 search"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></span></a>
+            </li>
+            <li>
+                <a class="g-button g-button-1">Free Demo</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form class="top">
+        <div class="media">
+            <a class="pull-right" href="#">
+                <img class="media-object"
+                    src="https://images.unsplash.com/photo-1516572541403-d8d1ef5b8844?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=85"
+                    style="width:450px; margin:3rem; padding:2rem;" alt="...">
+            </a>
+            <div class="media-body" style="padding-left:5rem; margin:3rem;">
+                <p class="media-heading" style="margin:2rem; font-size:45px;"><b>Board e-Learning Platform</b></p>
+                <h3 class="text-primary" style="margin:2rem;">Expand your skills, acquire confidence, and consolidate
+                    your knowledge of Board</h3>
+
+                <a class="gradient-button">Get Started</a>
             </div>
-        </footer>
+        </div>
+
+        <p style="text-align:center; margin:3rem; font-size:16px;">Continuous improvement is a key factor in leveraging
+            and developing the workforce in any organization, but especially in the technology industry which is marked
+            by a rapid rate of change and innovation. Whether you're an inexperienced user or a seasoned pro, the Board
+            e-Learning platform effectively addresses all of your training needs, no matter where you or your
+            organization is located.</p>
+        <p style="text-align:center; margin:2rem; font-size:25px; padding-left:5%; padding-right: 5%;"><b>Start your
+                e-Learning journey through our extensive product tutorials and business cases</b></p>
+
+        <div class="video" style="position:relative; padding-bottom:20%; padding-top:20%; height:0; overflow:hidden;">
+            <iframe width="600" height="249" src="https://www.youtube.com/embed/upvvE6hjHDQ" frameborder="0"
+                allowfullscreen
+                style="position:absolute; top:13%; left:0; width:600px; height:344px; border-radius: 20px;">
+            </iframe>
+        </div>
+    </form>
+
+    <form class="icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="media" style="text-align:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5"
+                            class="bi bi-clock-history" viewBox="0 0 16 16">
+                            <path
+                                d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
+                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
+                            <path
+                                d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                        <div class="media-body">
+                            <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>10 Tracks</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="media" style="text-align:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5"
+                            class="bi bi-laptop" viewBox="0 0 16 16">
+                            <path
+                                d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+                        </svg>
+                        <div class="media-body">
+                            <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>170+ Product Videos</b>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="media" style="text-align:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5"
+                            class="bi bi-inboxes-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1H4.98zM3.81.563A1.5 1.5 0 0 1 4.98 0h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374L3.81.563zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393z" />
+                        </svg>
+                        <div class="media-body">
+                            <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>20+ Business Cases</b>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="media" style="text-align:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5"
+                            class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                            <path
+                                d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
+                        </svg>
+                        <div class="media-body">
+                            <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Equivalent to 5 weeks of
+                                    on-site training</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <h1 style="text-align:center; margin:3rem;"><b>Key Advantages</b></h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media" style="text-align:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-book"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                    </svg>
+                    <div class="media-body" style="text-align:center;">
+                        <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Comprehensive platform</b>
+                        </h4>
+                        <p style="font-size:18px" class="text-muted">Access all the Board e-Learning content through one
+                            centrally managed repository. All material is reliable and validated according to our
+                            quality standards.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media" style="text-align:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5" class="bi bi-shop"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+                    </svg>
+                    <div class="media-body" style="text-align:center;">
+                        <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Self-directed learning
+                                experience</b></h4>
+                        <p style="font-size:18px" class="text-muted">Design your own learning curve and track your
+                            progress by effectively matching your goals with the contents of the catalogue. Board
+                            e-Learning dramatically boosts the training experience for any type of Board user, such as
+                            Business Users, End Users, Developers or Administrators, reducing the time-to-productivity
+                            lapse with obvious profitable returns.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media" style="text-align:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5"
+                        class="bi bi-globe2" viewBox="0 0 16 16">
+                        <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                    </svg>
+                    <div class="media-body" style="text-align:center;">
+                        <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Anytime, Anywhere</b></h4>
+                        <p style="font-size:18px" class="text-muted">Get unlimited and permanent access to e-Learning
+                            materials. Learn in your own time, at your own pace, and in any location that is convenient,
+                            without the expense of training venues or travel costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media" style="text-align:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5"
+                        class="bi bi-house" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    <div class="media-body" style="text-align:center;">
+                        <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>What-Why-How</b></h4>
+                        <p style="font-size:18px" class="text-muted">Take advantage of the “3 Pillars” learning approach
+                            throughout the video courses. Discover WHAT you are going to learn; understand WHY that
+                            topic is critical and the benefits it can bring to an organization or a department; and find
+                            out HOW to implement the relevant solution within Board.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media" style="text-align:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5"
+                        class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <div class="media-body" style="text-align:center;">
+                        <h4 class="media-heading" style="margin:2rem; font-size:20px;"><b>Firsthand knowledge</b></h4>
+                        <p style="font-size:18px" class="text-muted">See Board in action in the real world. The Board
+                            course library takes you through fundamental basic concepts right into concrete business
+                            cases and provides in-depth insight into some common business challenges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="media" style="text-align:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="#1780c5"
+                        class="bi bi-share-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                    </svg>
+                    <div class="media-body" style="text-align:center; ">
+                        <h4 class="media-heading" style="margin:2rem; font-size:18px;"><b>End-to-end learning
+                                journey</b></h4>
+                        <p style="font-size:18px" class="text-muted">Gain knowledge across all the fundamental topics of
+                            Board. From System Setup to Database Design, Board Application Build and Delivery to
+                            Maintenance and Troubleshooting, understand the entire Board Solution Lifecycle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form class="new-form">
+        <div class="aligned">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="https://www.board.com/sites/default/files/boardino.png"
+                    style="width:450px;" alt="...">
+            </a>
+            <span>
+                <h1 class="media-heading-md">Meet your virtual trainer</h1>
+                <p>Boardino, your helpful training assistant, will be with you on every step of your e-Learning journey.
+                    Designed by illustrator Carlo Stanga, Boardino guides you through each training module, providing
+                    clear, concise instructions to help speed up the learning process.</p>
+            </span>
+        </div>
+
+        <div class="container">
+            <p style="text-align:center; font-size:25px; margin:5rem;"><b>Explore the e-Learning Platform. Enjoy a 2
+                    minute preview!</b></p>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="videos"
+                        style="position:relative; padding-bottom:45%; padding-top:40px; height:0; overflow:hidden;">
+                        <iframe width="450" height="230" src="https://www.youtube.com/embed/y8aN_-vLWqA" frameborder="0"
+                            allowfullscreen
+                            style="position:absolute; top:0; left:0; width:450px; height:230px; border-radius: 20px;">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="videos"
+                        style="position:relative; padding-bottom:45%; padding-top:40px; height:0; overflow:hidden;">
+                        <iframe width="450" height="230" src="https://www.youtube.com/embed/t81pN5z0ECw" frameborder="0"
+                            allowfullscreen
+                            style="position:absolute; top:0; left:0; width:450px; height:230px; border-radius: 20px;">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="container-fluid" style="margin:8rem;">
+        <div class="row">
+            <div class="col-12 col-md-5" style="text-align:right;">
+                <p style="font-size:56px;"><b>Learn more about the content</b></p>
+                <a href="#" class="btn btn-danger" role="button" style="border-radius: 12px;">Visit the user
+                    community</a>
+            </div>
+            <div class="col-12 col-md-2" style="text-align:right;">
+            </div>
+            <div class="col-12 col-md-5" style="text-align:left;">
+                <p style="font-size:56px;"><b>Begin your e‑Learning journey</b></p>
+                <a href="#" class="btn btn-danger" role="button" style="border-radius: 12px;">Request access</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="last-form" style="padding-left:40%; padding-top:5%">
+        <p style="font-size:50px;"><b>Want to see Board in action?</b></p>
+        <a class="grad-button grad-button-4">Request a demo</a>
+    </div>
+
+    <footer>
+        <div class="container region region-footer-bottom">
+            <div id="block-block-16" class="block block-block footer-navigation">
+                <nav class="row">
+                    <ul class="col-lg-2 col-md-2 col-sm-12 list-unstyled">
+                        <li class="menu-title">
+                            <h3><b>
+                                    <a href="#" style="color:white;">Capabilities</a>
+                                </b></h3>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">FP&A</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Reporting Software</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Self-service BI tools</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Mobile</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Strategic planning</a>
+                        </li>
+                    </ul>
+                    <ul class="col-lg-2 col-md-2 col-sm-12 list-unstyled">
+                        <li class="menu-title">
+                            <h3><b>
+                                    <a href="#" style="color:white;">Platform</a>
+                                </b></h3>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Product overview</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Technology</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Cloud (SAAS)</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">BI Toolkit</a>
+                        </li>
+                    </ul>
+                    <ul class="col-lg-3 col-md-3 col-sm-12 list-unstyled">
+                        <li class="menu-title">
+                            <h3><b>
+                                    <a href="#" style="color:white;">By department</a>
+                                </b></h3>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Finance</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Sales</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Supply chain</a>
+                        </li>
+                    </ul>
+                    <ul class="col-lg-3 col-md-3 col-sm-12 list-unstyled">
+                        <li class="menu-title">
+                            <h3><b>
+                                    <a href="#" style="color:white;">By industry</a>
+                                </b></h3>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Retail</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Manufacturing</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Automotive</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Financial services</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Insurance</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">More...</a>
+                        </li>
+                    </ul>
+                    <ul class="col-lg-2 col-md-2 col-sm-12 list-unstyled">
+                        <li class="menu-title">
+                            <h3><b>
+                                    <a href="#" style="color:white;">Resources</a>
+                                </b></h3>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">News</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Community</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Case studies</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Analyst reports</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:white;">Whitepapers</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <hr>
+            <div id="block-block-21" class="block block-block social-links text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" style="color:white;" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg> LinkedIn</a></li>
+                    <li class="list-inline-item"><a href="#" style="color:white;" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg> Twitter</a></li>
+                    <li class="list-inline-item"><a href="#" style="color:white;" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg> Facebook</a></li>
+                    <li class="list-inline-item"><a href="#" style="color:white;" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                            </svg> YouTube</a></li>
+                </ul>
+            </div>
+            </hr>
+
+            <hr>
+            <div id="block-block-6" class="block block-block">
+                <p>Board is an all-in-one Decision-Making Platform which combines Business Intelligence tools with
+                    Corporate Performance Management, Simulation, and Predictive Analytics capabilities. Its
+                    coding-free, drag-and-drop interface enables users to build self-service analytics and planning
+                    applications with ease to meet the ongoing decision-making requirements of their organization. Board
+                    allows the creation of dashboards, reports, and analyses which are fully integrated with enterprise
+                    planning and simulation processes, bringing together financial and operational data for complete
+                    visibility of the relationship between output, performance, and financial results. The platform is
+                    featured in three Gartner Magic Quadrants, is highly praised in numerous other analyst reports, and
+                    repeatedly comes out as the top solution in customer reviews of BI and CPM solutions.</p>
+            </div>
+            </hr>
+
+            <hr>
+            <div id="block-block-11" class="block block-block">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">Copyright © 2021 - All rights reserved. Board International - Business
+                        Intelligence Software Solution</div>
+                    <div class="col-12 col-md-6 text-right">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" style="color:white;">Privacy policy</a></li>
+                            <li class="list-inline-item"><a href="#" style="color:white;">Cookie policy</a></li>
+                            <li class="list-inline-item"><a href="#" style="color:white;" target="_blank">Code of
+                                    ethics</a></li>
+                            <li class="list-inline-item"><a href="#" style="color:white;">Terms of service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </hr>
+        </div>
+    </footer>
 </body>
 
 </html>
